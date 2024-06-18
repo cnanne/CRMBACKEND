@@ -6,6 +6,7 @@ class Phase(models.Model):
     phase_number = models.IntegerField()
     open_phase = models.BooleanField(default=True)
     won = models.BooleanField(default=False)
+    is_allowed_in_creation = models.BooleanField(default=True)
     
     def __str__(self):
         return self.name
